@@ -96,16 +96,15 @@ function Home() {
                 <p className="hero__subtitle">{siteConfig.tagline}</p>
               </div>
               <div className={styles.buttons}>
-                <a
+                <Link
                   className={classnames(
                     "button button--outline button--secondary button--lg rounded-pill",
                     styles.button
                   )}
-                  href="#"
-                  target="_blank"
+                  to={useBaseUrl("/blog")}
                 >
-                  Entrar na comunidade
-                </a>
+                  Blog
+                </Link>
                 <Link
                   className={classnames(
                     "button button--primary button--lg rounded-pill",
