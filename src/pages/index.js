@@ -92,7 +92,7 @@ function Home() {
                 className={styles.heroLogo}
               />
               <div className={styles.heroText}>
-                <h1 className="hero__title">white<b>Stone</b>_<i>dev</i></h1>
+                <h1 className="hero__title">Universo <b>0</b><i>1</i></h1>
                 <p className="hero__subtitle">{siteConfig.tagline}</p>
               </div>
               <div className={styles.buttons}>
@@ -104,7 +104,7 @@ function Home() {
                   href="#"
                   target="_blank"
                 >
-                  Join slack
+                  Entrar na comunidade
                 </a>
                 <Link
                   className={classnames(
@@ -113,7 +113,7 @@ function Home() {
                   )}
                   to={useBaseUrl("/blog")}
                 >
-                  About us
+                  Sobre a comunidade
                 </Link>
               </div>
             </div>
