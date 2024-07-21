@@ -5,44 +5,49 @@
  * work well for content-centric websites.
  */
 
-/* @TODO Move as many styles for the homepage as possible into styles.module.css */
+/* @TODO Move as muitos estilos para a homepage quanto possível em styles.module.css */
 
-/* You can override the default Infima variables here. */
+/* Importando as fontes Kanit e Jura */
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;600&family=Kanit:wght@800&display=swap');
+
+/* Você pode substituir as variáveis Infima padrão aqui. */
 :root {
-  --ifm-color-link: #289ef9;
-  --ifm-color-primary: #1eb1fc;
-  --ifm-color-primary-dark: #03a7fa;
-  --ifm-color-primary-darker: #039eed;
-  --ifm-color-primary-darkest: #0382c3;
-  --ifm-color-primary-light: #3abbfc;
-  --ifm-color-primary-lighter: #48bffd;
-  --ifm-color-primary-lightest: #03a7fa;
+  --ifm-color-link: #28aabc; /* Cor principal */
+  --ifm-color-primary: #28aabc; /* Cor principal */
+  --ifm-color-primary-dark: #1e8b99; /* Cor mais escura */
+  --ifm-color-primary-darker: #166d75; /* Cor ainda mais escura */
+  --ifm-color-primary-darkest: #0f4e51; /* Cor mais escura */
+  --ifm-color-primary-light: #32b4c4; /* Cor mais clara */
+  --ifm-color-primary-lighter: #3cc6cf; /* Cor ainda mais clara */
+  --ifm-color-primary-lightest: #46d7d9; /* Cor mais clara */
   --ifm-code-font-size: 95%;
-  --ifm-color-info: #1eb1fc;
-  --ifm-color-success: #1eb1fc;
-  --ifm-color-warning: #c94b4b;
-  --ifm-font-family-base: -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
-    Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --ifm-background-color: #fff;
-  --ifm-footer-background-color: #f9f9f9;
-  --ifm-hero-background-color: #f5f5f5;
-  --ifm-navbar-background-color: rgba(255, 255, 255, 0.95);
+  --ifm-color-info: #28aabc; /* Cor principal */
+  --ifm-color-success: #28aabc; /* Cor principal */
+  --ifm-color-warning: #d728ca; /* Cor de alerta */
+  --ifm-font-family-base: 'Jura', -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; /* Fonte Jura */
+  --ifm-font-family-monospace: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  --ifm-background-color: #ffffff; /* Cor de fundo principal */
+  --ifm-footer-background-color: #080719; /* Cor do rodapé */
+  --ifm-hero-background-color: #080719; /* Cor do herói */
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.95); /* Cor da navbar */
   --ifm-h1-font-size: 3rem;
-  --ifm-h1-font-size: 2rem;
+  --ifm-h2-font-size: 2rem;
+  --ifm-font-family-h1: 'Kanit', sans-serif; /* Fonte Kanit para h1 */
+  --ifm-font-family-h2: 'Kanit', sans-serif; /* Fonte Kanit para h2 */
+  --ifm-font-family-h3: 'Kanit', sans-serif; /* Fonte Kanit para h3 */
 }
 
 html[data-theme="dark"]:root {
-  --ifm-color-link: #289ef9;
-  --ifm-footer-background-color: #000;
-  --ifm-html-background-color: #242526;
-  --ifm-background-color: #090909;
-  --ifm-hero-background-color: #111111;
-  --ifm-navbar-background-color: rgba(0, 0, 0, 0.95);
+  --ifm-color-link: #28aabc; /* Cor principal */
+  --ifm-footer-background-color: #080719; /* Cor do rodapé */
+  --ifm-html-background-color: #242526; /* Cor de fundo escura */
+  --ifm-background-color: #080719; /* Cor de fundo escura */
+  --ifm-hero-background-color: #080719; /* Cor do herói */
+  --ifm-navbar-background-color: rgba(8, 7, 25, 0.95); /* Cor da navbar escura */
 }
 
 html[data-theme="dark"] {
-  --ifm-background-color: #1f201c;
+  --ifm-background-color: #1f201c; /* Cor de fundo escura */
 }
 
 @import "hero.css";
@@ -98,18 +103,23 @@ html[data-theme="dark"] hr {
   border-color: #242526;
 }
 
+/* Ajustes específicos para o tema claro */
+html:not([data-theme="dark"]) {
+  --ifm-background-color: #f7f9fc; /* Fundo mais claro e suave */
+}
+
 .home-main .code {
   padding: 0;
   height: 100%;
   font-size: 0.9rem;
-  background: #1e1e1e;
+  background: #ffffff; /* Fundo claro para o bloco de código */
   overflow: hidden;
   border-radius: 0.5rem;
 }
 
 .home-main .code-heading {
-  color: rgba(255, 255, 255, 1);
-  background: #191a1b;
+  color: #333; /* Cor de texto escura */
+  background: #f0f4f8; /* Cor de fundo clara para o cabeçalho do código */
   margin: 0;
   padding: 0.5rem 1rem;
   font-size: 1rem;
@@ -163,14 +173,17 @@ html[data-theme="dark"] hr {
 .main-wrapper h1 {
   font-weight: 800;
   margin-bottom: 2rem;
+  font-family: 'Kanit', sans-serif; /* Fonte Kanit */
 }
 
 .main-wrapper h2 {
   font-weight: 800;
+  font-family: 'Kanit', sans-serif; /* Fonte Kanit */
 }
 
 .main-wrapper h3 {
   font-weight: 600;
+  font-family: 'Kanit', sans-serif; /* Fonte Kanit */
 }
 
 @media screen and (max-width: 996px) {

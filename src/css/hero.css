@@ -2,7 +2,7 @@
   margin-top: -2rem;
   margin-bottom: 4rem;
   background: none;
-  color: black;
+  color: #080719; /* Ajustado para a cor da organização */
   background: linear-gradient(
     0deg,
     var(--ifm-hero-background-color) 0%,
@@ -14,7 +14,7 @@ html[data-theme="dark"] .hero {
   background: linear-gradient(
     0deg,
     var(--ifm-hero-background-color) 0%,
-    #000 100%
+    #000000 100%
   );
 }
 
@@ -85,6 +85,7 @@ html[data-theme="dark"] .hero {
   padding: 0;
   border: none;
   text-shadow: 0 0.1rem 0 rgba(255, 255, 255, 1), 0 0 8rem rgba(0, 0, 0, 0.5);
+  color: #080719; /* Ajustado para a cor da organização */
 }
 
 @media screen and (min-width: 689px) {
@@ -104,6 +105,7 @@ html[data-theme="dark"] .hero .hero__title {
   margin: 0;
   opacity: 0.7;
   font-weight: 400;
+  color: #080719; /* Ajustado para a cor da organização */
 }
 
 @media screen and (min-width: 689px) {
@@ -116,7 +118,7 @@ html[data-theme="dark"] .hero .hero__title,
 html[data-theme="dark"] .hero .hero__subtitle,
 html[data-theme="dark"] .hero .button:not(.button--outline),
 html[data-theme="dark"] .hero .button:hover {
-  color: white;
+  color: #ffffff;
 }
 
 .hero-marquee {

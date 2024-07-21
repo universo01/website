@@ -14,12 +14,13 @@
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-beta.20",
-    "@docusaurus/preset-classic": "^2.0.0-beta.20",
+    "@docusaurus/core": "3.4.0",
+    "@docusaurus/preset-classic": "3.4.0",
     "classnames": "^2.3.1",
     "lodash.times": "^4.3.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-responsive-carousel": "^3.2.23",
     "remark-github": "^11.2.2",
     "styled-components": "^5.3.5"
   },
