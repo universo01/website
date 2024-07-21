@@ -20,6 +20,7 @@
     "lodash.times": "^4.3.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-responsive-carousel": "^3.2.23",
     "remark-github": "^11.2.2",
     "styled-components": "^5.3.5"
   },

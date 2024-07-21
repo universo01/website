@@ -17,8 +17,8 @@ html[data-theme="dark"] .button:active {
 
 .button--primary,
 .button--primary:hover {
-  background: linear-gradient(0deg, #1786fb 0%, #2cfefe 100%) !important;
-  color: #fff;
+  background: linear-gradient(0deg, #28aabc 0%, #d728ca 100%) !important; /* Ajustado para as cores da organização */
+  color: #fff; /* Ajustado para a cor da organização */
 }
 
 .button.button--secondary.button--outline,
@@ -28,7 +28,7 @@ html[data-theme="dark"] .button:active {
 .button.button--secondary.button--outline:active {
   background: linear-gradient(0deg, #eeeeee 0%, #ffffff 100%) !important;
   background: #fff !important;
-  color: #222 !important;
+  color: #080719 !important; /* Ajustado para a cor da organização */
 }
 
 html[data-theme="dark"] .button.button--secondary.button--outline {

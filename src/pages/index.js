@@ -110,9 +110,9 @@ function Home() {
                     "button button--primary button--lg rounded-pill",
                     styles.button
                   )}
-                  to={useBaseUrl("/blog")}
+                  to={useBaseUrl("/about")} // Atualizado aqui para redirecionar para "Sobre Nós"
                 >
-                  Sobre a comunidade
+                  Sobre Nós
                 </Link>
               </div>
             </div>
@@ -127,7 +127,7 @@ function Home() {
               <div className="row">
                 <div className="col">
                   <h2 className={styles.featuresTitle}>
-                    <span>Open Source.</span> <span>Full Stack.</span> <span>Geek Tips.</span> <span>Community.</span>
+                    <span>Open Source.</span> <span>Tecnologia.</span> <span>Integrações.</span> <span>Comunidade.</span>
                   </h2>
                 </div>
               </div>

@@ -1,3 +1,5 @@
+/* navbar.css */
+
 .navbar {
   box-shadow: none;
 }
@@ -10,10 +12,16 @@
   font-size: 1.2rem;
   margin-left: 0.2rem;
   display: none;
+  color: #080719; /* Cor padrão para o tema claro */
 }
 
 .navbar-sidebar__brand .navbar__title {
   display: inline;
+}
+
+/* Ajuste a cor do título da navbar para dark mode */
+html[data-theme="dark"] .navbar__title {
+  color: #ffffff; /* Cor branca para o tema escuro */
 }
 
 .navbar__item.navbar__link[href*="github"],
@@ -24,12 +32,22 @@
   font-size: 0;
 }
 
+/* Ajuste a cor dos links da navbar para dark mode */
+html[data-theme="dark"] .navbar__item.navbar__link {
+  color: #ffffff; /* Cor branca para o tema escuro */
+}
+
 .navbar__item.navbar__link[href*="github"]:before {
   content: "";
   width: 1.5rem;
   height: 1.5rem;
   background-image: url("/img/brand-github.svg");
   background-repeat: no-repeat;
+}
+
+/* Ajuste a imagem do GitHub para dark mode */
+html[data-theme="dark"] .navbar__item.navbar__link[href*="github"]:before {
+  background-image: url("/img/brand-github-inverted.svg");
 }
 
 .navbar__items .react-toggle {
@@ -47,13 +65,10 @@
     rgba(19, 19, 19, 0.2) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
   transition: box-shadow 350ms ease-in-out;
 }
+
 html[data-theme="dark"] .navbar__search-input:focus {
   box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px,
     rgba(29, 29, 29, 0.5) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
-}
-
-html[data-theme="dark"] .navbar__item.navbar__link[href*="github"]:before {
-  background-image: url("/img/brand-github-inverted.svg");
 }
 
 @media screen and (max-width: 966px) {
@@ -65,6 +80,7 @@ html[data-theme="dark"] .navbar__item.navbar__link[href*="github"]:before {
 @media screen and (min-width: 420px) {
   .navbar__title {
     display: inline;
+    color: #080719; /* Cor padrão para o tema claro */
   }
 }
 

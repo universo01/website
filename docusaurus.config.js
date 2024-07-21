@@ -7,29 +7,25 @@ const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'u01',
-  tagline: 'Seu universo da tecnologia',
+  tagline: 'Seu universo de integrações',
   url: 'https://u01.tec.br',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
-  // GitHub pages deployment config.
   organizationName: 'universo01',
   projectName: 'website',
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'pt-BR',
+    locales: ['pt-BR'],
   },
 
   presets: [
     [
       "@docusaurus/preset-classic",
-      ({
+      {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/universo01/website',
@@ -41,87 +37,97 @@ const config = {
         theme: {
           customCss: require.resolve("./src/css/index.css"),
         },
-      }),
+      },
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      navbar: {
-        title: 'Universo 01',
-        logo: {
-          alt: 'Open source community',
-          src: 'img/logo.svg',
+  themeConfig: {
+    navbar: {
+      title: 'Universo 01',
+      logo: {
+        alt: 'Open source community',
+        src: 'img/logo.svg',
+      },
+      items: [
+        {
+          to: '/about',
+          label: 'Sobre',
+          position: 'left',
         },
-        items: [
-          {
-            to: '/blog',
-            label: 'Blog',
-            position: 'left'
-          },
-          {
-            to: "docs/intro",
-            activeBasePath: "docs",
-            label: "Documentation",
-            position: "left",
-          },
-          {
-            to: "docs/intro",
-            activeBasePath: "tutorials",
-            label: "Tutorial",
-            position: "left",
-          },
-          {
-            to: 'https://github.com/universo01/website',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
-      announcementBar: {
-        id: "new-major-announcement",
-        content:
-          "We are now on <a href='https://instagram.com/' target='_blank'>Instagram</a> and <a href='#' target='_blank'>YouTube</a> with amazing content.",
-        backgroundColor: "#1786fb",
-        textColor: "#fff",
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Slack',
-                href: '#',
-              },
-              {
-                label: 'Instagram',
-                href: '#',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                to: 'https://github.com/universo01',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} u01, Inc. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: require('prism-react-renderer').themes.vsDark,
-      },
-    }),
+        {
+          to: '/blog/bem-vindos',
+          label: 'Blog',
+          position: 'left',
+        },
+        {
+          to: "docs/intro",
+          activeBasePath: "docs",
+          label: "Documentation",
+          position: "left",
+        },
+        {
+          to: "docs/intro",
+          activeBasePath: "tutorials",
+          label: "Tutorial",
+          position: "left",
+        },
+        {
+          href: 'https://github.com/universo01/website',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
+    announcementBar: {
+      id: "new-major-announcement",
+      content:
+        "We are now on <a href='https://instagram.com/' target='_blank'>Instagram</a> and <a href='#' target='_blank'>YouTube</a> with amazing content.",
+      backgroundColor: "#1786fb",
+      textColor: "#fff",
+    },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'Slack',
+              href: '#',
+            },
+            {
+              label: 'Instagram',
+              href: '#',
+            },
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            {
+              label: 'Blog',
+              to: '/blog/bem-vindos',
+            },
+            {
+              label: 'GitHub',
+              to: 'https://github.com/universo01',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} u01, Inc. Construído com Docusaurus.`,
+    },
+    prism: {
+      theme: lightCodeTheme,
+      darkTheme: darkCodeTheme,
+    },
+    colorMode: {
+      // O padrão é "false". Ative para alternância de modo claro/escuro.
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
+  },
 };
 
 module.exports = config;

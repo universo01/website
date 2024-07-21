@@ -1,6 +1,6 @@
 ---
-slug: welcome
-title: Welcome
+slug: bem-vindos
+title: Bem-vindos
 authors: [rafaelbmateus]
 tags: [facebook, hello, docusaurus]
 ---
