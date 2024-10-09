@@ -9,6 +9,8 @@ tags: [APIs, ciclo de vida, monitoramento, aposentadoria, versionamento, api fir
 
 Assim como os seres vivos, as APIs têm um ciclo de vida. E em cada estágio do desenvolvimento de uma API, existem recomendações e boas práticas a serem seguidas. O intuito deste conteúdo é definir o significado e como você pode potencializar sua estratégia de negócios a partir da compreensão do ciclo de vida de uma API.
 
+<!-- truncate -->
+
 Antes de mais nada, temos que compreender que APIs não são simplesmente ativos tecnológicos, são ativos de negócio. A estratégia de APIs deve estar conectada com a estratégia de negócios para que as organizações consigam aumentar a experiência dos clientes aplicando conceitos de conectividade moderna, como arquitetura orientada a eventos, microsserviços, computação em nuvem, inteligência artificial, open everything, e que estejam focadas em se tornarem cada vez mais conectadas, digitais e abertas!
 
 O ciclo de vida das APIs é o conceito em que elas existem sob várias fases, e cada uma tem sua relevância em todo o processo de desenvolvimento, operações e estratégias de negócio da organização. É importante ressaltar que não existe consenso na comunidade sobre quais são todos os estágios de vida de uma API, porque dependerá de diversos fatores como políticas internas de desenvolvimento de APIs, processos de governança e operações da organização, tipo de API, casos de uso e etc. Ou seja, vocês encontrarão conteúdos que falam sobre 3 estágios, 4 estágios, 5 estágios e por aí vai. No fim das contas, a quantidade de estágios não é o mais relevante, mas sim a explicação do ciclo como um todo.
